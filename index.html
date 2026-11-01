@@ -1,0 +1,915 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="vi" style="min-height: 100vh; background-color: rgb(250, 248, 255); color: rgb(26, 26, 46); margin: 0px; padding: 0px; display: block !important; opacity: 1 !important; visibility: visible !important;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Làng Ta - Đạo Tràng &amp; Pháp Môn Dược Sư Lưu Ly Quang Vương Phật</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Core Resilient Inline Fallback Styles -->
+<style>
+    html, body {
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      min-height: 100vh !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      background-color: #faf8ff !important;
+      color: #191b23 !important;
+      font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      scroll-behavior: smooth;
+    }
+    .font-headline { font-family: 'Merriweather', Georgia, serif; }
+    .font-body { font-family: 'Be Vietnam Pro', sans-serif; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #93c5fd; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Tùy chỉnh thanh trượt audio */
+    input[type=range].audio-slider {
+      -webkit-appearance: none;
+      background: transparent;
+    }
+    input[type=range].audio-slider:focus {
+      outline: none;
+    }
+    input[type=range].audio-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 14px;
+      width: 14px;
+      border-radius: 50%;
+      background: #eab308;
+      cursor: pointer;
+      box-shadow: 0 0 6px rgba(234, 179, 8, 0.6);
+      margin-top: -4px;
+      transition: transform 0.15s ease;
+    }
+    input[type=range].audio-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.25);
+    }
+    input[type=range].audio-slider::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 6px;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 9999px;
+    }
+    input[type=range].audio-slider::-moz-range-thumb {
+      height: 14px;
+      width: 14px;
+      border-radius: 50%;
+      background: #eab308;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 0 6px rgba(234, 179, 8, 0.6);
+    }
+    input[type=range].audio-slider::-moz-range-track {
+      width: 100%;
+      height: 6px;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 9999px;
+    }
+  </style>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#003fb1",
+            "primary-container": "#1a56db",
+            "primary-fixed": "#dbe1ff",
+            "primary-fixed-dim": "#b5c4ff",
+            "lapis-deep": "#0d2b6b",
+            "lapis-azure": "#2563eb",
+            "lapis-radiance": "#38bdf8",
+            secondary: "#904d00",
+            "secondary-container": "#fe932c",
+            "secondary-fixed": "#ffdcc3",
+            "celestial-gold": "#eab308",
+            "sacred-halo": "#fef9c3",
+            "jade-leaf": "#047857",
+            "jade-dew": "#ecfdf5",
+            "lotus-mist": "#fdf2f8",
+            "pure-lotus": "#ec4899",
+            surface: "#faf8ff",
+            "surface-dim": "#d9d9e4",
+            "surface-container": "#ededf8",
+            "surface-container-low": "#f3f3fe",
+            "surface-container-high": "#e7e7f3",
+            "surface-container-lowest": "#ffffff",
+            "on-surface": "#191b23",
+            "on-surface-variant": "#434654",
+            "text-subtle": "#475569",
+            "serene-bg": "#f8fafc",
+            outline: "#737686",
+            "outline-variant": "#c3c5d7",
+          },
+          fontFamily: {
+            headline: ["Merriweather", "serif"],
+            body: ["Be Vietnam Pro", "sans-serif"],
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-serene-bg font-body text-on-surface antialiased selection:bg-primary/20 selection:text-primary" style="min-height: 100vh; background-color: rgb(250, 248, 255); color: rgb(25, 27, 35); margin: 0px; padding: 0px; display: block !important; opacity: 1 !important; visibility: visible !important; overflow-y: auto !important;">
+<!-- HEADER / NAVIGATION -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_2px_15px_rgba(26,86,219,0.06)]">
+<div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+<!-- LOGO LÀNG TA -->
+<a class="flex items-center gap-3 group" href="#trang-chu">
+<div class="w-11 h-11 rounded-full bg-gradient-to-tr from-primary via-lapis-azure to-lapis-radiance flex items-center justify-center text-white shadow-md shadow-primary/20 group-hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined text-[26px]">spa</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline text-xl text-primary font-bold tracking-tight flex items-center gap-1.5">
+            Làng Ta
+            <span class="w-1.5 h-1.5 rounded-full bg-celestial-gold"></span>
+</span>
+</div>
+</a>
+<!-- MENU ĐIỀU HƯỚNG MƯỢT MÀ -->
+<nav class="hidden lg:flex items-center gap-1 p-1 bg-surface-container-low/90 rounded-full border border-outline-variant/40">
+<a class="px-4 py-2 text-sm font-semibold text-primary hover:text-primary rounded-full transition-all" href="#trang-chu">Trang Chủ</a>
+<a class="px-4 py-2 text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-full transition-all" href="#gioi-thieu">Giới Thiệu Làng Ta</a>
+<a class="px-4 py-2 text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-full transition-all" href="#12-dai-nguyen">12 Đại Nguyện</a>
+<a class="px-4 py-2 text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container-high rounded-full transition-all" href="#chu-duoc-su">Chú Dược Sư</a>
+</nav>
+<!-- CTA BUTTON -->
+</div>
+</header>
+<main class="w-full pt-20" id="trang-chu">
+<!-- HERO BANNER TÔN KÍNH ĐỨC PHẬT DƯỢC SƯ (HIỂN THỊ TRỌN VẸN BỨC TRANH) -->
+<section class="relative w-full bg-gradient-to-b from-primary/10 via-surface to-serene-bg pt-2 pb-6 sm:pb-10">
+<div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+<div class="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-primary/15 border border-primary/20 bg-black/5">
+<!-- Sử dụng trọn vẹn hình ảnh banner từ DataStore -->
+<img alt="Tôn tượng Đức Phật Dược Sư Lưu Ly Quang Vương Phật - Làng Ta Sống Hạnh Viên Dung" class="w-full h-auto object-contain block transform hover:scale-[1.008] transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUSNXowh7s25GYfFtYSoxCgLns79L1kznu6VyD27L6HgYWxh4zdDkfZ7c7LQzzge0o2M2PSqAOK_mXuo-yhrREQvzrJio45ISA9U47jx6uQeoTN7E5GkqOJPV4fdPn-1Fx5NlfjC6SNRklkYdEcKyaH4xNgo0I86Fa9ppONDKQAvbWZ0x9-SLxwbuT4EMRTy-WnTBoexQaOqwwIWbzF5Mjm9-sJjhLn4eRudZ3RF0vkZwIRcf9p3mN">
+</div>
+</div>
+</section>
+<!-- SECTION 1: GIỚI THIỆU VỀ NHÓM LÀNG TA (ĐẠO TRÀNG LÀNG TA) -->
+<section class="py-16 sm:py-24 bg-white relative overflow-hidden" id="gioi-thieu">
+<div class="absolute -top-32 -right-32 w-96 h-96 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-32 -left-32 w-96 h-96 bg-jade-dew rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+<!-- Header phần Giới thiệu -->
+<div class="text-center max-w-3xl mx-auto mb-12">
+<h2 class="font-headline text-2xl sm:text-4xl text-primary font-bold leading-tight mb-4">
+            Về Đạo Tràng Làng Ta
+          </h2>
+<div class="w-16 h-1 bg-gradient-to-r from-primary to-celestial-gold rounded-full mx-auto mb-6"></div>
+<p class="font-headline italic text-lg sm:text-xl text-secondary font-medium leading-relaxed">
+            "Sống Hạnh Viên Dung — Lan tỏa năng lượng chữa lành từ bi của Đức Phật Dược Sư Lưu Ly Quang Vương Như Lai đến cộng đồng."
+          </p>
+<p class="text-text-subtle text-base leading-relaxed mt-4">
+            Nhóm Làng Ta do Thầy Hoàng Quý Sơn lập ra với tâm nguyện phụng sự cộng đồng Phật tử thập phương, xây dựng môi trường tu học theo pháp môn Dược sư. Nơi mỗi người tìm lại sự an lành nội tại, thấu hiểu quy luật nhân quả, cùng nhau vượt qua tật bệnh và thăng hoa đời sống tinh thần.
+          </p>
+</div>
+</div>
+</section>
+<!-- SECTION: KẾT NỐI THIỆN DUYÊN MẠNG XÃ HỘI -->
+<section class="py-12 bg-gradient-to-b from-white to-surface-container-low/60 relative border-t border-outline-variant/30" id="ket-noi-cong-dong">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-10">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary-fixed/40 text-primary text-xs font-bold uppercase tracking-widest mb-3">
+<span class="material-symbols-outlined text-[15px]">hub</span>
+            Kết Nối Thiện Duyên
+          </div>
+<h3 class="font-headline text-xl sm:text-2xl text-primary font-bold tracking-tight mb-2">
+            Đồng Hành Cùng Làng Ta Trên Mạng XÃ Hội
+          </h3>
+<p class="text-text-subtle text-sm leading-relaxed">
+            Kính mời quý Phật tử cùng tham gia sinh hoạt, lắng nghe pháp âm thanh tịnh và lan tỏa năng lượng an lành.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Facebook -->
+<a class="group relative bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm hover:shadow-lg hover:border-primary/40 hover:scale-[1.008] transition-all duration-300 flex flex-col justify-between" href="https://web.facebook.com/groups/langtahoangquyson" rel="noopener noreferrer" target="_blank">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+</svg>
+</div>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary-fixed text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">groups</span>Cộng Đồng
+                </span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-base text-on-surface group-hover:text-primary transition-colors mb-1.5">Group Làng Ta trên Facebook</h4>
+<p class="text-text-subtle text-xs leading-relaxed">Giao lưu, chia sẻ tu tập và kết nối thiện duyên cùng đạo tràng.</p>
+</div>
+</div>
+<div class="mt-5 pt-3 border-t border-outline-variant/20 flex items-center justify-between text-xs font-semibold text-primary">
+<span class="">Tham gia nhóm</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Card 2: Hoàng Quý Sơn Music -->
+<a class="group relative bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm hover:shadow-lg hover:border-secondary/40 hover:scale-[1.008] transition-all duration-300 flex flex-col justify-between" href="https://www.youtube.com/@HoangQuySonMUSIC" rel="noopener noreferrer" target="_blank">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-secondary flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+</svg>
+</div>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-secondary-fixed text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">music_note</span>Âm Nhạc
+                </span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-base text-on-surface group-hover:text-secondary transition-colors mb-1.5">Kênh Hoàng Quý Sơn Music</h4>
+<p class="text-text-subtle text-xs leading-relaxed">Thưởng thức âm nhạc chữa lành, thiền ca và nhạc Phật giáo thanh tịnh.</p>
+</div>
+</div>
+<div class="mt-5 pt-3 border-t border-outline-variant/20 flex items-center justify-between text-xs font-semibold text-secondary">
+<span class="">Lắng nghe trên YouTube</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Card 3: Cười Để Tỉnh -->
+<a class="group relative bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 shadow-sm hover:shadow-lg hover:border-jade-leaf/40 hover:scale-[1.008] transition-all duration-300 flex flex-col justify-between" href="https://www.youtube.com/@CuoiDeTinh" rel="noopener noreferrer" target="_blank">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-jade-dew text-jade-leaf flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined text-[26px]">sentiment_satisfied</span>
+</div>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-jade-dew text-jade-leaf flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">psychology_alt</span>Tỉnh Thức
+                </span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-base text-on-surface group-hover:text-jade-leaf transition-colors mb-1.5">Kênh Cười Để Tỉnh</h4>
+<p class="text-text-subtle text-xs leading-relaxed">Pháp thoại nhẹ nhàng, soi sáng tâm thức và tỉnh thức trong nụ cười.</p>
+</div>
+</div>
+<div class="mt-5 pt-3 border-t border-outline-variant/20 flex items-center justify-between text-xs font-semibold text-jade-leaf">
+<span class="">Khám phá kênh</span>
+<span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 2: 12 ĐẠI NGUYỆN CỦA ĐỨC PHẬT DƯỢC SƯ -->
+<section class="py-16 sm:py-24 bg-surface-container-low/60 relative" id="12-dai-nguyen">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-fixed text-secondary text-xs font-bold uppercase tracking-widest mb-4">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+            Bổn Nguyện Thù Thắng
+          </div>
+<h2 class="font-headline text-2xl sm:text-4xl text-primary font-bold leading-tight mb-4">
+            12 Đại Nguyện Cứu Khổ Ban Vui Của Đức Dược Sư Lưu Ly Quang Như Lai
+          </h2>
+<div class="w-16 h-1 bg-gradient-to-r from-primary to-celestial-gold rounded-full mx-auto mb-6"></div>
+<p class="text-text-subtle text-base sm:text-lg leading-relaxed">
+            Hạnh nguyện đại từ đại bi sâu dày như biển cả, phát khởi khi Ngài còn hành Bồ Tát đạo, nhằm soi sáng cõi Ta Bà, hóa giải bệnh tật, nghiệp chướng và cứu độ tất cả chúng sinh hữu tình được trọn vẹn an vui cả đời này lẫn đời sau.
+          </p>
+</div>
+<!-- LƯỚI 12 ĐẠI NGUYỆN (GRID 3 CỘT) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Đại Nguyện 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm hover:shadow-md hover:border-primary/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-9 h-9 rounded-full bg-primary text-white font-headline font-bold text-sm flex items-center justify-center shadow-sm">01</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary-fixed text-primary">Hào Quang Lưu Ly</span>
+</div>
+<h4 class="font-headline font-bold text-base text-on-surface mb-2">Nguyện Phát Hào Quang Vô Lượng</h4>
+<p class="text-text-subtle text-sm leading-relaxed">
+                Nguyện khi thành Phật, tự thân phát hào quang rực rỡ chiếu soi vô số thế giới, thân đủ ba mươi hai tướng tốt, tám mươi vẻ đẹp, khiến tất cả chúng sinh đều được đồng như thân Phật.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline italic">Kinh Dược Sư — Nguyện thứ nhất</div>
+</div>
+<!-- Đại Nguyện 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm hover:shadow-md hover:border-primary/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-9 h-9 rounded-full bg-primary text-white font-headline font-bold text-sm flex items-center justify-center shadow-sm">02</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary-fixed text-primary">Khai Mở Trí Tuệ</span>
+</div>
+<h4 class="font-headline font-bold text-base text-on-surface mb-2">Nguyện Thân Như Ngọc Lưu Ly</h4>
+<p class="text-text-subtle text-sm leading-relaxed">
+                Nguyện thân trong ngoài sáng sạch, không chút tì vết nhơ bẩn, hào quang sáng hơn nhật nguyệt, khai mở tâm trí cho chúng sinh tăm tối nơi u đồ được thấy tỏ đường đi.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline italic">Kinh Dược Sư — Nguyện thứ hai</div>
+</div>
+<!-- Đại Nguyện 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm hover:shadow-md hover:border-primary/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-9 h-9 rounded-full bg-primary text-white font-headline font-bold text-sm flex items-center justify-center shadow-sm">03</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-primary-fixed text-primary">Thọ Dụng Đầy Đủ</span>
+</div>
+<h4 class="font-headline font-bold text-base text-on-surface mb-2">Nguyện Ban Phương Tiện Vô Tận</h4>
+<p class="text-text-subtle text-sm leading-relaxed">
+                Nguyện dùng vô lượng trí huệ phương tiện, làm cho chúng sinh được đầy đủ tất cả vật dụng nuôi sống hàng ngày, chẳng khiến một ai phải chịu cảnh nghèo túng, cơ hàn.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline italic">Kinh Dược Sư — Nguyện thứ ba</div>
+</div>
+<!-- Đại Nguyện 4 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm hover:shadow-md hover:border-jade-leaf/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-9 h-9 rounded-full bg-jade-leaf text-white font-headline font-bold text-sm flex items-center justify-center shadow-sm">04</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-jade-dew text-jade-leaf">Quy Về Chánh Đạo</span>
+</div>
+<h4 class="font-headline font-bold text-base text-on-surface mb-2">Nguyện Dẫn Người Tà Về Chánh</h4>
+<p class="text-text-subtle text-sm leading-relaxed">
+                Nguyện nếu có chúng sinh đi theo tà đạo, thì khiến họ đều được quay về chánh đạo Bồ Đề; nếu tu theo Nhị thừa thì đều được an lập vững vàng trong giáo pháp Đại thừa.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline italic">Kinh Dược Sư — Nguyện thứ tư</div>
+</div>
+<!-- Đại Nguyện 5 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm hover:shadow-md hover:border-jade-leaf/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-9 h-9 rounded-full bg-jade-leaf text-white font-headline font-bold text-sm flex items-center justify-center shadow-sm">05</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-jade-dew text-jade-leaf">Phục Hồi Giới Đức</span>
+</div>
+<h4 class="font-headline font-bold text-base text-on-surface mb-2">Nguyện Giữ Giới Pháp Thanh Tịnh</h4>
+<p class="text-text-subtle text-sm leading-relaxed">
+                Nguyện giúp người tu học giữ trọn tịnh giới. Nếu rủi lỡ phạm giới, nghe đến danh hiệu Dược Sư liền được thanh tịnh giới hạnh, không rơi vào ba đường ác khổ sở.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline italic">Kinh Dược Sư — Nguyện thứ năm</div>
+</div>
+<!-- Đại Nguyện 6 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm hover:shadow-md hover:border-jade-leaf/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-9 h-9 rounded-full bg-jade-leaf text-white font-headline font-bold text-sm flex items-center justify-center shadow-sm">06</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-jade-dew text-jade-leaf">Chữa Lành Khiếm Khuyết</span>
+</div>
+<h4 class="font-headline font-bold text-base text-on-surface mb-2">Nguyện Thân Thể Vẹn Toàn Lành Lặn</h4>
+<p class="text-text-subtle text-sm leading-relaxed">
+                Nguyện chúng sinh thân thể hèn kém, đui, điếc, câm, ngọng, tật nguyền, ghẻ lở, điên cuồng... nghe danh hiệu Phật Dược Sư liền được khỏi hẳn, thân thể đoan trang, trí huệ sáng suốt.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline italic">Kinh Dược Sư — Nguyện thứ sáu</div>
+</div>
+<!-- Đại Nguyện 7 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm hover:shadow-md hover:border-secondary/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-9 h-9 rounded-full bg-secondary text-white font-headline font-bold text-sm flex items-center justify-center shadow-sm">07</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-secondary-fixed text-secondary">Cứu Khổ Tiêu Bệnh</span>
+</div>
+<h4 class="font-headline font-bold text-base text-on-surface mb-2">Nguyện Trừ Dứt Bệnh Khổ Hiểm Nghèo</h4>
+<p class="text-text-subtle text-sm leading-relaxed">
+                Nguyện kẻ nghèo cùng không ai cứu giúp, không thuốc không thầy, nhiều bệnh bức bách; danh hiệu Phật vừa lọt qua tai thì bệnh khổ tiêu trừ, thân tâm an lạc, gia quyến quy tụ đủ đầy.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline italic">Kinh Dược Sư — Nguyện thứ bảy</div>
+</div>
+<!-- Đại Nguyện 8 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm hover:shadow-md hover:border-secondary/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-9 h-9 rounded-full bg-secondary text-white font-headline font-bold text-sm flex items-center justify-center shadow-sm">08</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-secondary-fixed text-secondary">Chuyển Thân Giải Thoát</span>
+</div>
+<h4 class="font-headline font-bold text-base text-on-surface mb-2">Nguyện Chuyển Nữ Thành Nam</h4>
+<p class="text-text-subtle text-sm leading-relaxed">
+                Nguyện cho người phụ nữ chịu trăm điều khổ nhọc bức bách, muốn cầu thoát khỏi; nghe danh hiệu Phật liền phát tâm dũng mãnh, đời sau chuyển thân trượng phu, thẳng tiến đạo quả vô thượng.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline italic">Kinh Dược Sư — Nguyện thứ tám</div>
+</div>
+<!-- Đại Nguyện 9 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm hover:shadow-md hover:border-secondary/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-9 h-9 rounded-full bg-secondary text-white font-headline font-bold text-sm flex items-center justify-center shadow-sm">09</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-secondary-fixed text-secondary">Phá Lưới Tà Ma</span>
+</div>
+<h4 class="font-headline font-bold text-base text-on-surface mb-2">Nguyện Thoát Lưới Ma Trùng Điệp</h4>
+<p class="text-text-subtle text-sm leading-relaxed">
+                Nguyện cứu vớt chúng sinh khỏi vòng cương tỏa của ma đạo, phá tan mọi rừng rậm tà kiến, dẫn dắt họ tu tập chánh hạnh Bồ Tát, mau chóng chứng ngộ Vô Thượng Chánh Đẳng Chánh Giác.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline italic">Kinh Dược Sư — Nguyện thứ chín</div>
+</div>
+<!-- Đại Nguyện 10 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm hover:shadow-md hover:border-pure-lotus/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-9 h-9 rounded-full bg-pure-lotus text-white font-headline font-bold text-sm flex items-center justify-center shadow-sm">10</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-lotus-mist text-pure-lotus">Giải Thoát Gông Cùm</span>
+</div>
+<h4 class="font-headline font-bold text-base text-on-surface mb-2">Nguyện Thoát Nạn Tù Tội Quan Tai</h4>
+<p class="text-text-subtle text-sm leading-relaxed">
+                Nguyện kẻ vướng luật vua phép nước giam cầm, gông cùm xiềng xích, khổ nhục bức bách; nghe danh hiệu Phật, nhờ sức oai thần phước đức đều được giải thoát mọi tai ương hoạn nạn.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline italic">Kinh Dược Sư — Nguyện thứ mười</div>
+</div>
+<!-- Đại Nguyện 11 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm hover:shadow-md hover:border-pure-lotus/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-9 h-9 rounded-full bg-pure-lotus text-white font-headline font-bold text-sm flex items-center justify-center shadow-sm">11</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-lotus-mist text-pure-lotus">No Đủ Pháp Vị</span>
+</div>
+<h4 class="font-headline font-bold text-base text-on-surface mb-2">Nguyện Ban Thức Ăn Thức Uống</h4>
+<p class="text-text-subtle text-sm leading-relaxed">
+                Nguyện kẻ bị đói khát khổ sở, vì tìm ăn mà tạo các nghiệp ác; nghe danh Phật liền được thức ăn ngon ngọt làm cho no đủ, sau đó lấy pháp vị vi diệu kiến lập an lạc lâu dài.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline italic">Kinh Dược Sư — Nguyện thứ mười một</div>
+</div>
+<!-- Đại Nguyện 12 -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/40 shadow-sm hover:shadow-md hover:border-pure-lotus/40 transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="w-9 h-9 rounded-full bg-pure-lotus text-white font-headline font-bold text-sm flex items-center justify-center shadow-sm">12</span>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-lotus-mist text-pure-lotus">Trang Nghiêm Thanh Tịnh</span>
+</div>
+<h4 class="font-headline font-bold text-base text-on-surface mb-2">Nguyện Ban Y Phục &amp; Hoa Lạc</h4>
+<p class="text-text-subtle text-sm leading-relaxed">
+                Nguyện kẻ nghèo không áo mặc, bị muỗi mòng nóng lạnh bức bách; nghe danh Phật liền được y phục thượng hạng, chuỗi ngọc tràng hoa, hương hoa âm nhạc trang nghiêm như ý nguyện.
+              </p>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/20 text-xs text-outline italic">Kinh Dược Sư — Nguyện thứ mười hai</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: CHÚ DƯỢC SƯ (DƯỢC SƯ QUÁN ĐẢNH CHÂN NGÔN) & PHƯƠNG PHÁP TRÌ TỤNG -->
+<section class="py-16 sm:py-24 bg-white relative overflow-hidden" id="chu-duoc-su">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-fixed text-primary text-xs font-bold uppercase tracking-widest mb-4">
+<span class="material-symbols-outlined text-[16px]">graphic_eq</span>
+            Mật Chú Trị Liệu &amp; Tiêu Nghiệp
+          </div>
+<h2 class="font-headline text-2xl sm:text-4xl text-primary font-bold leading-tight mb-4">
+            Thần Chú Dược Sư — Năng Lượng Lưu Ly Tiêu Trừ Nghiệp Chướng Bệnh Tật
+          </h2>
+<div class="w-16 h-1 bg-gradient-to-r from-primary to-celestial-gold rounded-full mx-auto mb-6"></div>
+<p class="text-text-subtle text-base leading-relaxed">
+            Dược Sư Quán Đảnh Chân Ngôn là kết tinh ánh sáng đại bi từ đỉnh đảnh Đức Như Lai, có năng lực chuyển hóa 404 căn bệnh thể chất, thanh lọc tâm thức khỏi ba độc tham-sân-si và tạo năng lượng hộ trì cát tường.
+          </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- KHỐI CHÚ VĂN CHÍNH THỨC & AUDIO PLAYER (7 CỘT) -->
+<div class="lg:col-span-7 bg-surface-container-low/70 p-6 sm:p-8 rounded-3xl border border-primary/20 shadow-lg">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/30 mb-6">
+<span class="font-headline font-bold text-lg text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-celestial-gold">spa</span>
+                Dược Sư Quán Đảnh Chân Ngôn
+              </span>
+<span class="text-xs font-semibold px-3 py-1 rounded-full bg-primary text-white">108 Biến Tịnh Hóa</span>
+</div>
+<!-- ÂM HÁN VIỆT CHUẨN MỰC -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-primary-fixed-dim/60 mb-6 shadow-sm">
+<span class="text-xs font-bold text-secondary uppercase tracking-widest block mb-2">Bản Phiên Âm Hán - Việt:</span>
+<p class="font-headline text-base sm:text-lg text-on-surface leading-relaxed font-normal tracking-wide text-justify">
+                "Nam mô bạc già phạt đế, bệ sát xã, lũ lô thích lưu ly, bác lặc bà, hắt ra xà dã. Đát tha yết đa dã, a ra ha đế, tam miệu tam bột đà dã. Đát điệt tha: <strong class="text-primary font-bold">Án, bệ sát thệ, bệ sát thệ, bệ sát xã, tam một yết đế tóa ha.</strong>"
+              </p>
+</div>
+<!-- PHẠN NGỮ (SANSKRIT PHIÊN ÂM) -->
+<div class="bg-surface-container-lowest p-6 rounded-2xl border border-outline-variant/30 mb-6">
+<span class="text-xs font-bold text-outline uppercase tracking-widest block mb-2">Phiên Âm Phạn Ngữ (Sanskrit):</span>
+<p class="font-mono text-sm sm:text-base text-text-subtle leading-relaxed italic">
+                Namo bhagavate bhaiṣajyaguru vaidūryaprabharājāya tathāgatāya arhate samyaksambuddhāya tadyathā: <span class="text-primary font-semibold">oṃ bhaiṣajye bhaiṣajye bhaiṣajyasamudgate svāhā.</span>
+</p>
+</div>
+<!-- PLAYER ÂM THANH HOÀN CHỈNH (HTML5 AUDIO PLAYER) -->
+<div class="bg-gradient-to-br from-[#091b3a] via-[#10357d] to-[#1a56db] p-6 rounded-2xl text-white shadow-xl border border-celestial-gold/30">
+<!-- Thẻ audio HTML5 gắn sẵn file âm thanh trì chú chuẩn 108 biến -->
+<audio id="duoc-su-audio" preload="metadata" src="108_bien_chu_duoc_su.mp3" class="">
+  Trình duyệt của bạn không hỗ trợ thẻ audio HTML5.
+</audio>
+
+<div class="flex items-center justify-between mb-4">
+  <div>
+    <h4 class="font-headline font-bold text-base text-sacred-halo flex items-center gap-2">
+      <span class="material-symbols-outlined text-celestial-gold text-[22px]">graphic_eq</span>
+      Âm Thanh Trì Chú 108 Biến
+    </h4>
+    <p class="text-xs text-primary-fixed mt-0.5" id="audioTrackTitle">
+      File âm thanh trì chú chuẩn 108 biến (Thầy Hoàng Quý Sơn trì tụng)
+    </p>
+  </div>
+  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 text-sacred-halo text-[11px] font-semibold border border-white/15">
+    <span class="w-2 h-2 rounded-full bg-celestial-gold animate-pulse" id="audioStatusDot"></span>
+    <span id="audioStatusText" class="">Sẵn sàng phát</span>
+  </span>
+</div>
+
+<!-- Controls Container -->
+<div class="bg-white/10 backdrop-blur-md p-4 sm:p-5 rounded-xl space-y-3.5 border border-white/15 shadow-inner">
+  <!-- Dòng trên: Play button & Thanh timeline tua thời gian -->
+  <div class="flex items-center gap-3 sm:gap-4">
+    <!-- Nút Play/Pause chính -->
+    <button aria-label="Phát hoặc tạm dừng âm thanh" class="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-celestial-gold text-lapis-deep flex items-center justify-center shrink-0 shadow-lg hover:bg-yellow-400 active:scale-95 transition-all focus:outline-none ring-2 ring-sacred-halo/60 cursor-pointer" id="mantraAudioBtnLanding" type="button">
+      <span class="material-symbols-outlined text-[32px] font-bold" id="playIconLanding">play_arrow</span>
+    </button>
+
+    <div class="flex-1 min-w-0 space-y-1.5">
+      <!-- Thông tin tiến độ & Đồng hồ thời gian -->
+      <div class="flex justify-between items-center text-xs text-primary-fixed">
+        <span class="font-medium truncate pr-2 text-white/90" id="audioStateLabel">Trì niệm tiếp dẫn năng lượng Lưu Ly</span>
+        <span class="font-mono text-celestial-gold font-semibold text-xs tracking-wider shrink-0" id="audioTimerLanding">00:00 / 00:00</span>
+      </div>
+      <!-- Thanh tua thời gian (Seeker bar) -->
+      <div class="relative flex items-center">
+        <input class="audio-slider w-full h-2 rounded-full cursor-pointer z-10" id="audioSeekBar" max="100" min="0" step="0.1" type="range" value="0">
+        <div class="absolute top-0 left-0 h-2 bg-gradient-to-r from-celestial-gold to-yellow-300 rounded-full pointer-events-none transition-all duration-75" id="audioProgressFill" style="width: 0%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dòng dưới: Tua nhanh 10s + Điều chỉnh Âm lượng + Ghi chú chất lượng chuẩn (Hoàn toàn không có nút Upload) -->
+  <div class="pt-2 border-t border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs">
+    <!-- Nhóm nút tua phụ -->
+    <div class="flex items-center gap-1.5 text-white/80">
+      <button class="px-2 py-1 rounded hover:bg-white/10 flex items-center gap-1 text-[11px] text-white/90 transition-colors cursor-pointer" id="rewind10Btn" title="Lùi lại 10 giây" type="button">
+        <span class="material-symbols-outlined text-[16px]">replay_10</span> -10s
+      </button>
+      <button class="px-2 py-1 rounded hover:bg-white/10 flex items-center gap-1 text-[11px] text-white/90 transition-colors cursor-pointer" id="forward10Btn" title="Tua tới 10 giây" type="button">
+        <span class="material-symbols-outlined text-[16px]">forward_10</span> +10s
+      </button>
+    </div>
+
+    <!-- Điều chỉnh Volume -->
+    <div class="flex items-center gap-2 text-white/90">
+      <button class="hover:text-celestial-gold transition-colors flex items-center cursor-pointer" id="volumeMuteBtn" title="Tắt / Bật tiếng" type="button">
+        <span class="material-symbols-outlined text-[20px]" id="volumeIcon">volume_up</span>
+      </button>
+      <input class="audio-slider w-16 sm:w-20 h-1.5 rounded-full cursor-pointer" id="audioVolumeBar" max="1" min="0" step="0.05" title="Âm lượng" type="range" value="1">
+    </div>
+
+    <!-- Huy hiệu chất lượng nguyên bản của Đạo Tràng -->
+    <div class="inline-flex items-center gap-1.5 text-sacred-halo/90 text-[11px] font-medium py-1 px-2.5 rounded-full bg-white/5 border border-white/10">
+      <span class="material-symbols-outlined text-[14px] text-celestial-gold">verified</span>
+      <span class="">Bản ghi âm chính thức</span>
+    </div>
+  </div>
+</div></div>
+</div>
+<!-- PHƯƠNG PHÁP TRÌ TỤNG & HƯỚNG DẪN HÀNG NGÀY (5 CỘT) -->
+<div class="lg:col-span-5 space-y-6">
+<div class="bg-surface-container-lowest p-6 sm:p-8 rounded-3xl border border-outline-variant/40 shadow-sm">
+<h3 class="font-headline text-lg sm:text-xl font-bold text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-jade-leaf">verified</span>
+                Hướng Dẫn Thực Hành Hàng Ngày
+              </h3>
+<ul class="space-y-4 text-sm text-text-subtle">
+<li class="flex items-start gap-3">
+<span class="w-6 h-6 rounded-full bg-jade-dew text-jade-leaf font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">1</span>
+<div class="">
+<strong class="text-on-surface block font-semibold mb-0.5">Tịnh hóa thân tâm &amp; Nước chú:</strong>
+                    Rửa tay, súc miệng sạch sẽ. Đặt một ly nước lọc tinh khiết trước bàn thờ Phật hoặc nơi thanh tịnh trang nghiêm.
+                  </div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-6 h-6 rounded-full bg-jade-dew text-jade-leaf font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">2</span>
+<div class="">
+<strong class="text-on-surface block font-semibold mb-0.5">Quán tưởng ánh sáng Lưu Ly:</strong>
+                    Tâm niệm hướng về Đông Phương, quán tưởng Đức Dược Sư phóng hào quang xanh biếc chiếu rọi vào đỉnh đầu, thẩm thấu tịnh hóa từng tế bào.
+                  </div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-6 h-6 rounded-full bg-jade-dew text-jade-leaf font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">3</span>
+<div class="">
+<strong class="text-on-surface block font-semibold mb-0.5">Số lượng biến trì tụng:</strong>
+                    Khởi niệm chí thành 21 biến, 49 biến hoặc 108 biến. Giữ hơi thở điều hòa, câu chú rõ ràng, tâm không tán loạn.
+                  </div>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-6 h-6 rounded-full bg-jade-dew text-jade-leaf font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">4</span>
+<div class="">
+<strong class="text-on-surface block font-semibold mb-0.5">Hồi hướng công đức rộng khắp:</strong>
+                    Uống chén nước tịnh hoặc rưới cho người bệnh, sau đó chí tâm phát nguyện hồi hướng công đức cho gia tiên, thân bằng và khắp pháp giới chúng sinh.
+                  </div>
+</li>
+</ul>
+</div>
+<!-- TRÍCH LỜI DẠY CỔ ĐỨC -->
+<div class="bg-gradient-to-br from-sacred-halo/50 via-white to-lotus-mist/40 p-6 rounded-2xl border border-secondary-fixed shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-2 block">format_quote</span>
+<p class="font-headline italic text-sm text-on-surface leading-relaxed mb-3">
+                "Thần chú Dược Sư ví như diệu dược trị lành trăm thứ bệnh khổ não. Người chí tâm thọ trì, trong ngoài đều được tịnh quang soi thấu, ách nạn tiêu trừ."
+              </p>
+<span class="text-xs font-bold text-secondary tracking-wider block">— Kinh Dược Sư Sớ Sao</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER TRANG NGHIÊM & THANH TỊNH -->
+<footer class="w-full bg-gradient-to-b from-[#091b3a] via-[#0d234a] to-[#08152e] text-white relative overflow-hidden border-t-2 border-celestial-gold/40 shadow-2xl">
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-celestial-gold/80 to-transparent"></div>
+<div class="absolute -top-40 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-40 right-1/4 w-96 h-96 bg-sacred-halo/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16 items-start">
+<div class="lg:col-span-7 space-y-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-celestial-gold/30 via-primary-container to-lapis-radiance/40 flex items-center justify-center text-sacred-halo border border-celestial-gold/40 shadow-lg shadow-black/20">
+<span class="material-symbols-outlined text-[28px]">spa</span>
+</div>
+<div>
+<span class="font-headline text-2xl font-bold tracking-tight text-white block">Làng Ta</span>
+<span class="text-[11px] font-semibold text-celestial-gold tracking-widest uppercase">LANGTA.ORG</span>
+</div>
+</div>
+<div class="p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm max-w-2xl">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-celestial-gold text-[22px] shrink-0 mt-0.5">format_quote</span>
+<p class="font-headline italic text-sm sm:text-base text-lotus-mist/95 leading-relaxed font-normal">
+                "Nguyện an lành cho tất cả pháp giới chúng sinh, thân tâm an lạc, tiêu trừ tật bệnh."
+              </p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 bg-white/[0.04] p-6 sm:p-8 rounded-3xl border border-white/10 backdrop-blur-md">
+<div class="flex items-center gap-2.5 mb-5 pb-3 border-b border-white/10">
+<span class="material-symbols-outlined text-celestial-gold text-[20px]">auto_awesome</span>
+<h4 class="font-headline text-base font-bold text-sacred-halo tracking-wide">Pháp Môn Dược Sư</h4>
+</div>
+<ul class="space-y-3.5 text-xs sm:text-sm text-primary-fixed">
+<li class="">
+<a class="hover:text-white transition-all flex items-center gap-2.5 group py-1" href="#12-dai-nguyen">
+<span class="w-2 h-2 rounded-full bg-celestial-gold/70 group-hover:bg-celestial-gold group-hover:scale-125 transition-all shrink-0"></span>
+<span class="group-hover:translate-x-1 transition-transform">12 Đại Nguyện Cứu Khổ</span>
+</a>
+</li>
+<li class="">
+<a class="hover:text-white transition-all flex items-center gap-2.5 group py-1" href="#chu-duoc-su">
+<span class="w-2 h-2 rounded-full bg-celestial-gold/70 group-hover:bg-celestial-gold group-hover:scale-125 transition-all shrink-0"></span>
+<span class="group-hover:translate-x-1 transition-transform">Thần Chú Quán Đảnh 108 Biến</span>
+</a>
+</li>
+<li class="">
+<a class="hover:text-white transition-all flex items-center gap-2.5 group py-1" href="#chu-duoc-su">
+<span class="w-2 h-2 rounded-full bg-celestial-gold/70 group-hover:bg-celestial-gold group-hover:scale-125 transition-all shrink-0"></span>
+<span class="group-hover:translate-x-1 transition-transform">Phương Pháp Trì Chú Nước Tịnh</span>
+</a>
+</li>
+<li class="">
+<a class="hover:text-white transition-all flex items-center gap-2.5 group py-1" href="#gioi-thieu">
+<span class="w-2 h-2 rounded-full bg-celestial-gold/70 group-hover:bg-celestial-gold group-hover:scale-125 transition-all shrink-0"></span>
+<span class="group-hover:translate-x-1 transition-transform">Sứ Mệnh "Sống Hạnh Viên Dung"</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-fixed/70">
+<div class="flex items-center gap-2 text-center md:text-left">
+<span class="material-symbols-outlined text-[15px] text-celestial-gold/80">verified</span>
+<p class="">© 2018 Làng Ta (langta.org). Trang thông tin &amp; nền tảng tu tập trực tuyến phi lợi nhuận hướng dẫn thực hành Pháp Môn Dược Sư Lưu Ly Quang Vương Như Lai.</p>
+</div>
+<div class="flex items-center gap-2 text-celestial-gold/80 text-[11px] font-medium tracking-wide uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-celestial-gold"></span>
+<span class="">Sống Hạnh Viên Dung</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- SCRIPT ĐIỀU KHIỂN TRÌNH PHÁT ÂM THANH HTML5 HOÀN CHỈNH -->
+<script>
+    (function() {
+      try {
+        var audio = document.getElementById('duoc-su-audio');
+        var audioBtn = document.getElementById('mantraAudioBtnLanding');
+        var playIcon = document.getElementById('playIconLanding');
+        var timerDisplay = document.getElementById('audioTimerLanding');
+        var seekBar = document.getElementById('audioSeekBar');
+        var progressFill = document.getElementById('audioProgressFill');
+        var stateLabel = document.getElementById('audioStateLabel');
+        var statusDot = document.getElementById('audioStatusDot');
+        var statusText = document.getElementById('audioStatusText');
+        var volumeBar = document.getElementById('audioVolumeBar');
+        var volumeIcon = document.getElementById('volumeIcon');
+        var volumeMuteBtn = document.getElementById('volumeMuteBtn');
+        var rewind10Btn = document.getElementById('rewind10Btn');
+        var forward10Btn = document.getElementById('forward10Btn');
+        var customAudioUpload = document.getElementById('customAudioUpload');
+        var trackTitle = document.getElementById('audioTrackTitle');
+
+        if (!audio || !audioBtn) return;
+
+        // Định dạng thời gian mm:ss hoặc hh:mm:ss
+        function formatTime(seconds) {
+          if (isNaN(seconds) || seconds < 0) return '00:00';
+          var sec = Math.floor(seconds);
+          var hrs = Math.floor(sec / 3600);
+          var min = Math.floor((sec % 3600) / 60);
+          var remainingSec = sec % 60;
+
+          var pad = function(val) { return val < 10 ? '0' + val : val; };
+          if (hrs > 0) {
+            return pad(hrs) + ':' + pad(min) + ':' + pad(remainingSec);
+          }
+          return pad(min) + ':' + pad(remainingSec);
+        }
+
+        function updateTimer() {
+          var current = formatTime(audio.currentTime);
+          var total = formatTime(audio.duration || 0);
+          if (timerDisplay) {
+            timerDisplay.textContent = current + ' / ' + total;
+          }
+        }
+
+        // Cập nhật thanh timeline khi âm thanh phát
+        audio.addEventListener('timeupdate', function() {
+          if (audio.duration && !seekBar.matches(':active')) {
+            var percent = (audio.currentTime / audio.duration) * 100;
+            seekBar.value = percent;
+            if (progressFill) progressFill.style.width = percent + '%';
+          }
+          updateTimer();
+        });
+
+        // Tua bằng seekBar
+        if (seekBar) {
+          var onSeek = function() {
+            if (audio.duration) {
+              var seekTo = (seekBar.value / 100) * audio.duration;
+              audio.currentTime = seekTo;
+              if (progressFill) progressFill.style.width = seekBar.value + '%';
+              updateTimer();
+            }
+          };
+          seekBar.addEventListener('input', onSeek);
+          seekBar.addEventListener('change', onSeek);
+        }
+
+        // Nút Play / Pause
+        audioBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          if (audio.paused) {
+            var playPromise = audio.play();
+            if (playPromise !== undefined) {
+              playPromise.catch(function(err) {
+                console.warn('Lỗi phát âm thanh:', err);
+                if (statusText) statusText.textContent = 'Bấm lại để phát';
+              });
+            }
+          } else {
+            audio.pause();
+          }
+        });
+
+        // Sự kiện audio playing
+        audio.addEventListener('play', function() {
+          if (playIcon) playIcon.textContent = 'pause';
+          audioBtn.classList.add('ring-4', 'ring-sacred-halo');
+          if (stateLabel) stateLabel.textContent = 'Đang phát: Trì niệm tiếp dẫn năng lượng Lưu Ly';
+          if (statusText) statusText.textContent = 'Đang phát âm thanh';
+          if (statusDot) {
+            statusDot.classList.remove('bg-celestial-gold');
+            statusDot.classList.add('bg-green-400');
+          }
+        });
+
+        // Sự kiện audio pause
+        audio.addEventListener('pause', function() {
+          if (playIcon) playIcon.textContent = 'play_arrow';
+          audioBtn.classList.remove('ring-4', 'ring-sacred-halo');
+          if (stateLabel) stateLabel.textContent = 'Tạm dừng: Bấm để tiếp tục trì tụng';
+          if (statusText) statusText.textContent = 'Đang tạm dừng';
+          if (statusDot) {
+            statusDot.classList.remove('bg-green-400');
+            statusDot.classList.add('bg-celestial-gold');
+          }
+        });
+
+        // Sự kiện kết thúc file
+        audio.addEventListener('ended', function() {
+          if (playIcon) playIcon.textContent = 'play_arrow';
+          audioBtn.classList.remove('ring-4', 'ring-sacred-halo');
+          if (stateLabel) stateLabel.textContent = 'Hoàn tất 108 biến trì chú viên mãn';
+          if (statusText) statusText.textContent = 'Hoàn tất';
+          if (seekBar) seekBar.value = 0;
+          if (progressFill) progressFill.style.width = '0%';
+        });
+
+        audio.addEventListener('error', function() {
+          if (statusText) statusText.textContent = 'Không tìm thấy file mp3';
+          if (stateLabel) stateLabel.textContent = 'Kiểm tra tên file: 108_bien_chu_duoc_su.mp3 (cùng thư mục với file HTML)';
+        });
+
+        // Đọc metadata thời lượng
+        audio.addEventListener('loadedmetadata', function() {
+          updateTimer();
+        });
+
+        // Nút tua lùi 10 giây
+        if (rewind10Btn) {
+          rewind10Btn.addEventListener('click', function() {
+            audio.currentTime = Math.max(0, audio.currentTime - 10);
+          });
+        }
+
+        // Nút tua tới 10 giây
+        if (forward10Btn) {
+          forward10Btn.addEventListener('click', function() {
+            if (audio.duration) {
+              audio.currentTime = Math.min(audio.duration, audio.currentTime + 10);
+            }
+          });
+        }
+
+        // Điều chỉnh âm lượng
+        if (volumeBar) {
+          volumeBar.addEventListener('input', function() {
+            audio.volume = parseFloat(volumeBar.value);
+            audio.muted = (audio.volume === 0);
+            updateVolumeIcon();
+          });
+        }
+
+        // Bật / tắt tiếng (Mute toggle)
+        var lastVolume = 1;
+        function updateVolumeIcon() {
+          if (!volumeIcon) return;
+          if (audio.muted || audio.volume === 0) {
+            volumeIcon.textContent = 'volume_off';
+          } else if (audio.volume < 0.5) {
+            volumeIcon.textContent = 'volume_down';
+          } else {
+            volumeIcon.textContent = 'volume_up';
+          }
+        }
+
+        if (volumeMuteBtn) {
+          volumeMuteBtn.addEventListener('click', function() {
+            if (audio.muted || audio.volume === 0) {
+              audio.muted = false;
+              audio.volume = lastVolume > 0 ? lastVolume : 1;
+              if (volumeBar) volumeBar.value = audio.volume;
+            } else {
+              lastVolume = audio.volume;
+              audio.muted = true;
+              audio.volume = 0;
+              if (volumeBar) volumeBar.value = 0;
+            }
+            updateVolumeIcon();
+          });
+        }
+
+        // Hỗ trợ người dùng tải file MP3 của riêng mình
+        if (customAudioUpload) {
+          customAudioUpload.addEventListener('change', function(e) {
+            var file = e.target.files[0];
+            if (file) {
+              var fileUrl = URL.createObjectURL(file);
+              audio.src = fileUrl;
+              if (trackTitle) {
+                trackTitle.textContent = 'File của bạn: ' + file.name;
+              }
+              if (stateLabel) {
+                stateLabel.textContent = 'Đã tải: ' + file.name;
+              }
+              if (statusText) statusText.textContent = 'Sẵn sàng phát';
+              audio.load();
+              audio.play().catch(function() {});
+            }
+          });
+        }
+
+      } catch (err) {
+        console.warn('Audio Player Init Notice:', err);
+      }
+    })();
+  </script>
+
+
+</body></html>
